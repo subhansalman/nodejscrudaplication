@@ -3,11 +3,11 @@ import express from "express";
 const server = express();
 server.use(express.json());
 
-let memberList = [];
+let memberList = ["Subhan","Adil","Haris","Musab","Saad"];
 
 server.get("/", (req, res) => {
   res.status(200).json({
-    note: "Current members list",
+    note: "New members list",
     list: memberList,
   });
 });
